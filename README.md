@@ -28,9 +28,9 @@ To set this up, make sure that your marker list looks something like this:
    #if(middlejson != nil):
    #for(wp in middlejson):
    {
-      "url": "https://raw.githubusercontent.com/ccev/stopwatcher-icons/master/tileserver-2/#index(wp, 2).png",
-      "latitude": #index(wp, 0),
-      "longitude": #index(wp, 1),
+      "url": "https://raw.githubusercontent.com/jms412/PkmnHomeIcons/master/UICONS/#(wp.type)/#if(wp.type == "pokestop"):0#else:#(wp.teamId)#endif.png",
+      "latitude": #(wp.latitude),
+      "longitude": #(wp.longitude),
       "width": 20,
       "height": 20,
       "y_offset": -10
